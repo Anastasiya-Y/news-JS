@@ -26,7 +26,7 @@ class Sources {
             fragment.append(sourceClone);
         });
 
-        const sourceContainer = document.querySelector('.sources');
+        const sourceContainer = document.querySelector('.sources'); 
         if (sourceContainer) {
             sourceContainer.append(fragment);
         }
