@@ -34,3 +34,19 @@ export interface ArticlesResponse {
     totalResults: number;
     articles: Article[];
 }
+
+export type Options = {
+    [key: string]: string | undefined;
+};
+
+export type ResponseObject = {
+    endpoint: string;
+    options?: Options;
+};
+
+export type Callback<T = void> = (data: T) => void;
+
+export enum Errors {
+    Error401 = 401,
+    Error404 = 404,
+}
